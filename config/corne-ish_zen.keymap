@@ -29,9 +29,23 @@
 //                   | GUI | BSP | TAB |   | ENT | SPC  | LWR |
                         bindings = <
    &kp ESC &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
-   &kp LALT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &mt LALT F13 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp GRAVE &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                   &kp LGUI &kp BSPC &mt LCTRL TAB   &kp RET &kp SPACE &mo 1
+                        >;
+                };
+                second_layer {
+                        label = "NUMPAD";
+// -----------------------------------------------------------------------------------------
+// | L2 |  !  |  @  |  UP |  {  |  }  |   | FWD |  7  |  8  |  9  |  +  |  *  |
+// | L3 |  #  | LFT | DWN | RGT |  $  |   | BCK |  4  |  5  |  6  |  -  |  /  |
+// | L4 |  [  |  ]  |  (  |  )  |  &  |   |  %  |  1  |  2  |  3  |  0  |  =  |
+//                    | GUI |  ^  | SPC |   | ENT |   to 0  | ALT |
+                        bindings = <
+   &to 2 &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp N6    &kp N7 &kp N8 &kp N9 &kp PLUS  &kp KP_MULTIPLY
+   &to 3 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LEFT  &kp N4 &kp N5 &kp N6 &kp MINUS &kp KP_DIVIDE
+   &to 4 &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT &kp N1 &kp N2 &kp N3 &kp N0    &kp EQUAL
+                           &kp LGUI &kp CARET &mt LCTRL TAB      &kp RET  &kp SPACE  &to 0
                         >;
                 };
                 lower_layer {
@@ -45,7 +59,7 @@
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &kp BSPC      &mt LCTRL TAB      &kp RET  &kp SPACE   &trans
+                          	        &kp LGUI     &kp BSPC      &mt LCTRL TAB      &kp RET  &kp SPACE   &to 0
                         >;
                 };
 
@@ -60,7 +74,7 @@
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &reset  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &kp BSPC   &mt LCTRL TAB   &kp RET   &kp SPACE   &trans
+                    	     &kp LGUI &kp BSPC   &mt LCTRL TAB   &kp RET   &kp SPACE   &to 0
                         >;
                 };
         };
