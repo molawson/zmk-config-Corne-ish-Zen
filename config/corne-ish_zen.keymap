@@ -40,12 +40,12 @@
 // | L2 |  !  |  @  |  UP |  {  |  }  |   | FWD |  7  |  8  |  9  |  +  |  *  |
 // | L3 |  #  | LFT | DWN | RGT |  $  |   | BCK |  4  |  5  |  6  |  -  |  /  |
 // | L4 |  [  |  ]  |  (  |  )  |  &  |   |  %  |  1  |  2  |  3  |  0  |  =  |
-//                    | GUI |  ^  | SPC |   | ENT |   to 0  | ALT |
+//                  | "|" |  ^  | SHFT |  | ENT |   to 0  | ALT |
                         bindings = <
    &to 2 &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT))    &kp N7 &kp N8 &kp N9 &kp PLUS  &kp KP_MULTIPLY
    &to 3 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT))  &kp N4 &kp N5 &kp N6 &kp MINUS &kp KP_DIVIDE
    &to 4 &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT &kp N1 &kp N2 &kp N3 &kp N0    &kp EQUAL
-                           &kp LGUI &kp CARET &mt LCTRL TAB      &kp RET  &kp SPACE  &to 0
+                           &kp PIPE &kp CARET &kp LSHFT      &kp RET  &kp SPACE  &trans
                         >;
                 };
                 lower_layer {
