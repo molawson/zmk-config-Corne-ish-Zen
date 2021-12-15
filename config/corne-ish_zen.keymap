@@ -31,7 +31,7 @@
    &mt LALT TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
    &mt LCTRL F13 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &mt LSHFT ESC &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT GRAVE
-                  &kp LGUI &kp BSPC &mt LCTRL TAB   &kp RET &kp SPACE &mo 1
+                  &kp LGUI &kp BSPC &mt LCTRL ESC   &kp RET &kp SPACE &mo 1
                         >;
                 };
                 second_layer {
@@ -45,7 +45,7 @@
    &kp LALT &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp EQUAL
    &to 2 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &kp BSLH
    &to 3 &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT &kp PIPE &kp N1 &kp N2 &kp N3 &mt RSHFT N0
-                           &kp LGUI &kp LSHFT &kp LCTRL      &kp RET  &kp CARET  &trans
+                           &kp LGUI &kp LSHFT &mt LCTRL ESC      &kp RET  &kp CARET  &trans
                         >;
                 };
                 lower_layer {
