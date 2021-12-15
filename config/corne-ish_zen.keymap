@@ -37,14 +37,14 @@
                 second_layer {
                         label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
-// | ALT |  !  |  @  |  UP |  {  |  }  |   | NXT |  +  |  7  |  8  |  9  |  =  |
-// | L2  |  #  | LFT | DWN | RGT |  $  |   | PRV |  *  |  4  |  5  |  6  |  \  |
-// | L3  |  [  |  ]  |  (  |  )  |  &  |   |  %  | "|" |  1  |  2  |  3  |  SHFT0  |
+// | ALT |  !  |  @  |  UP |  {  |  }  |   | NXT |  7  |  8  |  9  |  +  |  =  |
+// | L2  |  #  | LFT | DWN | RGT |  $  |   | PRV |  4  |  5  |  6  |  *  |  \  |
+// | L3  |  [  |  ]  |  (  |  )  |  &  |   |  %  |  1  |  2  |  3  |  0  |  SHFT|  |
 //                  | GUI | SHFT | CTRL |  | ENT |  ^  | trans |
                         bindings = <
-   &kp LALT &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp PLUS &kp N7 &kp N8 &kp N9 &kp EQUAL
-   &to 2 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp KP_MULTIPLY &kp N4 &kp N5 &kp N6 &kp BSLH
-   &to 3 &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT &kp PIPE &kp N1 &kp N2 &kp N3 &mt RSHFT N0
+   &kp LALT &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp N7 &kp N8 &kp N9 &kp PLUS &kp EQUAL
+   &to 2 &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &kp BSLH
+   &to 3 &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT &kp N1 &kp N2 &kp N3 &kp N0 &mt RSHFT PIPE
                            &kp LGUI &kp LSHFT &mt LCTRL ESC      &kp RET  &kp CARET  &trans
                         >;
                 };
