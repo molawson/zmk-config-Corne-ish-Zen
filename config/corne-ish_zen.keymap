@@ -37,44 +37,29 @@
                 second_layer {
                         label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
-// | ALT |  !  |  @  |  UP |  {   |   }   |  | NXT |  7  |  8  |  9  |  *  |   =   |
-// | L2  |  #  | LFT | DWN | RGT  |   $   |  | PRV |  4  |  5  |  6  |  +  |   \   |
-// | L3  |  [  |  ]  |  (  |  )   |   &   |  |  %  |  1  |  2  |  3  |  0  | SHFT| |
-//                   | tr  |  tr  |   tr  |  | tr  |  ^  | tr |
+// |  tr  |  !  |  @  |  UP |  {   |   }   |  | NXT |  7  |  8  |  9  |  *  |   =   |
+// |      |  #  | LFT | DWN | RGT  |   $   |  | PRV |  4  |  5  |  6  |  +  |   \   |
+// | to 2 |  [  |  ]  |  (  |  )   |   &   |  |  %  |  1  |  2  |  3  |  0  | SHFT| |
+//                    | tr  |  tr  |  tr   |  | tr  |  ^  |  tr |
                         bindings = <
-   &kp LALT &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp EQUAL
-   &to 2    &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp N4 &kp N5 &kp N6 &kp PLUS        &kp BSLH
-   &to 3    &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT        &kp N1 &kp N2 &kp N3 &kp N0          &mt RSHFT PIPE
-                              &trans &trans &trans   &trans &kp CARET &trans
+   &trans &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp EQUAL
+   &none  &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp N4 &kp N5 &kp N6 &kp PLUS        &kp BSLH
+   &to 2  &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT        &kp N1 &kp N2 &kp N3 &kp N0          &mt RSHFT PIPE
+                            &trans &trans &trans   &trans &kp CARET &trans
                         >;
                 };
-                lower_layer {
-                        label = "NUMBER";
+                third_layer {
+                        label = "FUNC";
 // -----------------------------------------------------------------------------------------
-// |  ALT |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |   to 0  | ALT |
+// |   | BT1  | BT2 | BT3 | BT4 |  BT5  |  |    |  F7  |  F8  | F9 | F10 | PL/P |
+// |   | BRUP | VUP |     |     | BTCLR |  |    |  F4  |  F5  | F6 | F11 | PREV |
+// |   | BRDN | VDN | MUT |     | RESET |  |    |  F1  |  F2  | F3 | F12 | NEXT |
+//                  | tr  | tr  |  tr   |  | tr |  SPC | to 0 |
                         bindings = <
-   &kp LALT    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &kp BSPC      &mt LCTRL ESC      &kp RET  &kp SPACE   &to 0
-                        >;
-                };
-
-                raise_layer {
-                        label = "SYMBOL";
-// -----------------------------------------------------------------------------------------
-// |  ALT  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | RESET |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT  |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                     | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp LALT  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &reset  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &kp BSPC   &mt LCTRL ESC   &kp RET   &kp SPACE   &to 0
+   &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &kp F7 &kp F8 &kp F9 &kp F10 &kp C_PP
+   &none  &kp C_BRI_UP &kp C_VOL_UP &none        &none        &bt BT_CLR     &none &kp F4 &kp F5 &kp F6 &kp F11 &kp C_PREV
+   &none  &kp C_BRI_DN &kp C_VOL_DN &kp C_MUTE   &none        &reset         &none &kp F1 &kp F2 &kp F3 &kp F12 &kp C_NEXT
+                                    &trans &trans &trans   &trans &kp SPACE &to 0
                         >;
                 };
         };
