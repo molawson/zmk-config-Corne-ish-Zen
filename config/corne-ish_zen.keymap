@@ -23,13 +23,13 @@
                 default_layer {
                         label = "QWERTY";
 // -----------------------------------------------------------------------------------------
-// |  ALT  |  Q  |  W  |  E  |  R  |   T   |  |  Y  |  U   |  I  |  O  |  P  |   -   |
-// |  CTRL |  A  |  S  |  D  |  F  |   G   |  |  H  |  J   |  K  |  L  |  ;  |   '   |
+// |  TAB  |  Q  |  W  |  E  |  R  |   T   |  |  Y  |  U   |  I  |  O  |  P  |   -   |
+// |  ALT  |  A  |  S  |  D  |  F  |   G   |  |  H  |  J   |  K  |  L  |  ;  |   '   |
 // | S/ESC |  Z  |  X  |  C  |  V  |   B   |  |  N  |  M   |  ,  |  .  |  /  | SHFT` |
 //                     | GUI | BSP | C/ESC |  | ENT | SPC  | LWR |
                         bindings = <
-   &mt LALT TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
-   &mt LCTRL F13 &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp TAB       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp MINUS
+   &kp LALT      &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &mt LSHFT ESC &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT GRAVE
                  &kp LGUI &kp BSPC &mt LCTRL ESC   &kp RET &kp SPACE &mo 1
                         >;
@@ -37,14 +37,14 @@
                 second_layer {
                         label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
-// |  tr  |  !  |  @  |  UP |  {   |   }   |  | NXT |  7  |  8  |  9  |  *  |   =   |
-// |      |  #  | LFT | DWN | RGT  |   $   |  | PRV |  4  |  5  |  6  |  +  |   \   |
+// |  F13 |  !  |  @  |  UP |  {   |   }   |  | NXT |  7  |  8  |  9  |  *  |   =   |
+// |  tr  |  #  | LFT | DWN | RGT  |   $   |  | PRV |  4  |  5  |  6  |  +  |   \   |
 // | to 2 |  [  |  ]  |  (  |  )   |   &   |  |  %  |  1  |  2  |  3  |  0  | SHFT| |
 //                    | tr  |  tr  |  tr   |  | tr  |  ^  |  tr |
                         bindings = <
-   &trans &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp EQUAL
-   &none  &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp N4 &kp N5 &kp N6 &kp PLUS        &kp BSLH
-   &to 2  &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT        &kp N1 &kp N2 &kp N3 &kp N0          &mt RSHFT PIPE
+   &kp F13 &kp EXCL &kp AT   &kp UP   &kp LBRC  &kp RBRC   &kp LS(LG(RBKT)) &kp N7 &kp N8 &kp N9 &kp KP_MULTIPLY &kp EQUAL
+   &trans  &kp HASH &kp LEFT &kp DOWN &kp RIGHT &kp DLLR   &kp LS(LG(LBKT)) &kp N4 &kp N5 &kp N6 &kp PLUS        &kp BSLH
+   &to 2   &kp LBKT &kp RBKT &kp LPAR &kp RPAR  &kp AMPS   &kp PRCNT        &kp N1 &kp N2 &kp N3 &kp N0          &mt RSHFT PIPE
                             &trans &trans &trans   &trans &kp CARET &trans
                         >;
                 };
